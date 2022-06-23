@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "d7f49397-b484-411c-8544-c83ed4555a89",
+		"name": "City Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"Seatle\"\r\n    },\r\n    {\r\n        \"name\": \"San fransisco\"\r\n    },\r\n    {\r\n        \"name\": \"Los Angelos\"\r\n    },\r\n    {\r\n        \"name\": \"Denver\"\r\n    },\r\n    {\r\n        \"name\": \"Kansas City\"\r\n    },\r\n    {\r\n        \"name\": \"Chicago\"\r\n    },\r\n    {\r\n        \"name\": \"Boston\"\r\n    },\r\n    {\r\n        \"name\": \"New york\"\r\n    },\r\n    {\r\n        \"name\": \"Atlanta\"\r\n    },\r\n    {\r\n        \"name\": \"Miami\"\r\n    },\r\n    {\r\n        \"name\": \"Dalas\"\r\n    },\r\n    {\r\n        \"name\": \"Houston\"\r\n    }\r\n\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cities/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cities",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRoads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    [\r\n       \r\n        {\r\n            \"startingCity\": 1,\r\n            \"endingCity\": 2,\r\n            \"distance\": 807\r\n            },\r\n\t\t{\"startingCity\":1,\"endingCity\":4,\"distance\":1331},\r\n\t\t{\"startingCity\":1,\"endingCity\":6,\"distance\":2097},\r\n\r\n\t\t{\"startingCity\":2,\"endingCity\":1,\"distance\":807},\r\n\t\t{\"startingCity\":2,\"endingCity\":3,\"distance\":381},\r\n\t\t{\"startingCity\":2,\"endingCity\":4,\"distance\":1267},\r\n\r\n\t\t{\"startingCity\":3,\"endingCity\":2,\"distance\":381},\r\n\t\t{\"startingCity\":3,\"endingCity\":4,\"distance\":1015},\r\n\t\t{\"startingCity\":3,\"endingCity\":5,\"distance\":1663},\r\n\t\t{\"startingCity\":3,\"endingCity\":11,\"distance\":1435},\r\n\r\n\t\t{\"startingCity\":4,\"endingCity\":1,\"distance\":1331},\r\n\t\t{\"startingCity\":4,\"endingCity\":2,\"distance\":1267},\r\n\t\t{\"startingCity\":4,\"endingCity\":3,\"distance\":1015},\r\n\t\t{\"startingCity\":4,\"endingCity\":5,\"distance\":599},\r\n\t\t{\"startingCity\":4,\"endingCity\":6,\"distance\":1003},\r\n\r\n\t\t{\"startingCity\":5,\"endingCity\":3,\"distance\":1663},\r\n\t\t{\"startingCity\":5,\"endingCity\":4,\"distance\":599},\r\n\t\t{\"startingCity\":5,\"endingCity\":6,\"distance\":533},\r\n\t\t{\"startingCity\":5,\"endingCity\":8,\"distance\":1260},\r\n\t\t{\"startingCity\":5,\"endingCity\":9,\"distance\":864},\r\n\t\t{\"startingCity\":5,\"endingCity\":11,\"distance\":496},\r\n\r\n\t\t{\"startingCity\":6,\"endingCity\":1,\"distance\":2097},\r\n\t\t{\"startingCity\":6,\"endingCity\":4,\"distance\":1003},\r\n\t\t{\"startingCity\":6,\"endingCity\":5,\"distance\":533},\r\n\t\t{\"startingCity\":6,\"endingCity\":7,\"distance\":983},\r\n\t\t{\"startingCity\":6,\"endingCity\":8,\"distance\":787},\r\n\r\n\t\t{\"startingCity\":7,\"endingCity\":6,\"distance\":983},\r\n\t\t{\"startingCity\":7,\"endingCity\":8,\"distance\":214},\r\n\r\n\t\t{\"startingCity\":8,\"endingCity\":5,\"distance\":1260},\r\n\t\t{\"startingCity\":8,\"endingCity\":6,\"distance\":787},\r\n\t\t{\"startingCity\":8,\"endingCity\":7,\"distance\":214},\r\n\t\t{\"startingCity\":8,\"endingCity\":9,\"distance\":888},\r\n\r\n\t\t{\"startingCity\":9,\"endingCity\":5,\"distance\":864},\r\n\t\t{\"startingCity\":9,\"endingCity\":8,\"distance\":888},\r\n\t\t{\"startingCity\":9,\"endingCity\":10,\"distance\":661},\r\n\t\t{\"startingCity\":9,\"endingCity\":11,\"distance\":781},\r\n\t\t{\"startingCity\":9,\"endingCity\":12,\"distance\":810},\r\n\r\n\t\t{\"startingCity\":10,\"endingCity\":9,\"distance\":661},\r\n\t\t{\"startingCity\":10,\"endingCity\":12,\"distance\":1187},\r\n\r\n\t\t{\"startingCity\":11,\"endingCity\":3,\"distance\":1435},\r\n\t\t{\"startingCity\":11,\"endingCity\":5,\"distance\":496},\r\n\t\t{\"startingCity\":11,\"endingCity\":9,\"distance\":781},\r\n\t\t{\"startingCity\":11,\"endingCity\":12,\"distance\":239},\r\n\r\n\t\t{\"startingCity\":12,\"endingCity\":9,\"distance\":810},\r\n\t\t{\"startingCity\":12,\"endingCity\":10,\"distance\":1187},\r\n\t\t{\"startingCity\":12,\"endingCity\":11,\"distance\":239}\r\n        \r\n    ]\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/roads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findPath",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/roads/shortest-path?startingCity=6&endingCity=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roads",
+						"shortest-path"
+					],
+					"query": [
+						{
+							"key": "startingCity",
+							"value": "6"
+						},
+						{
+							"key": "endingCity",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
